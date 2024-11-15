@@ -16,11 +16,13 @@ composer require orhanozyalcin/sendeo-client-laravel
 Configuration
 This package uses Laravel's Package Discovery, so no manual configuration is required. However, ensure the following is properly set up:
 
-Service Provider
-The SendeoServiceProvider is automatically registered.
+Service Provider <br>
 
-Facade
-The Sendeo alias is automatically added for easy usage.
+1. The SendeoServiceProvider is automatically registered.
+
+Facade <br>
+
+1. The Sendeo alias is automatically added for easy usage.
 
 
 Usage
