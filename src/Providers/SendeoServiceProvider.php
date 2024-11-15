@@ -27,6 +27,8 @@ class SendeoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->publishes([
+            __DIR__ . '/../config/sendeo.php' => config_path('sendeo.php'),
+        ], 'sendeo_config');
     }
 }

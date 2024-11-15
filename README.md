@@ -19,11 +19,32 @@ composer require orhanozyalcin/sendeo-client-laravel
 
 This package uses Laravel's **Package Discovery**, so no manual configuration is required. However, ensure the following is properly set up:
 
+## Publishing the Config File
+
+After installing the package, publish the configuration file to your Laravel project:
+
+```bash
+php artisan vendor:publish --tag=sendeo_config
+```
+
 ### **Service Provider**
 1. The `SendeoServiceProvider` is automatically registered.
 
 ### **Facade**
 1. The `Sendeo` alias is automatically added for easy usage.
+
+### **Example .env Configuration**
+
+```bash
+# Live
+SENDEO_API_ID=YourProductionApiID
+SENDEO_API_PASSWORD=YourProductionApiPassword
+SENDEO_API_URL=https://api.sendeo.com.tr
+
+# Test
+SENDEO_API_TEST_URL=https://api-dev.sendeo.com.tr
+SENDEO_TEST_MODE=true
+```
 
 ---
 
