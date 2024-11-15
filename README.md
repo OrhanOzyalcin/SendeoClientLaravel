@@ -66,7 +66,7 @@ dd($response);
 
 ### **Supported API Methods**
 
-#### **1. Authentication **
+#### 1. Authentication 
 
 ```php
 use SendeoClientLaravel\Models\LoginAES;
