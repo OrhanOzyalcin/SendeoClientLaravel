@@ -17,7 +17,7 @@ class SendeoExamplesController
     // Authenticate
     public function login()
     {
-        $loginUser = new LoginAES('TestUserName', 'TestPassWord');
+        $loginUser = new LoginAES(config('sendeo.api_id', ''), config('sendeo.api_password', ''));
         $response = Sendeo::login($loginUser);
         return $response;
     }
