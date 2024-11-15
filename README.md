@@ -50,6 +50,8 @@ SENDEO_TEST_MODE=true
 
 ## **Usage**
 
+
+
 ### **1. Using the Facade**
 You can interact with the Sendeo API using the `Sendeo` facade:
 
@@ -79,6 +81,14 @@ $cancelDelivery = new CancelDelivery('TRACK123456', 'REF123456');
 $response = $sendeoClient->cancelDelivery('auth-token', $cancelDelivery);
 
 dd($response);
+```
+
+### **3. Using the Debug Routes**
+
+```php
+// Usage: web.php or api.php file in Laravel
+// use SendeoClientLaravel\Models\SendeoTestRoutes;
+// SendeoTestRoutes::routes();
 ```
 
 ---
