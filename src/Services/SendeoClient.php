@@ -15,7 +15,9 @@ use SendeoClientLaravel\Models\GetCityDistricts;
 class SendeoClient
 {
     // Test Base Url
-    public string $baseUrl = "https://api-dev.sendeo.com.tr";
+    public string $BaseUrl = "https://api.sendeo.com.tr";
+
+    public string $TestUrl = "https://api-dev.sendeo.com.tr";
 
     public function Login(LoginAES $req)
     {
@@ -57,7 +59,7 @@ class SendeoClient
 
     private function Request($data, string $authToken, string $path, bool $isPost = false)
     {
-        $ch = curl_init($this->baseUrl . $path);
+        $ch = curl_init($this->TestUrl . $path);
 
         $headers = [
             'Authorization: Bearer ' . $authToken,
@@ -89,7 +91,7 @@ class SendeoClient
 
     private function LoginAES(LoginAES $data, string $path)
     {
-        $ch = curl_init($this->baseUrl . $path);
+        $ch = curl_init($this->TestUrl . $path);
 
         curl_setopt_array($ch, [
             CURLOPT_RETURNTRANSFER => true,
