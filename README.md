@@ -66,7 +66,16 @@ dd($response);
 
 ### **Supported API Methods**
 
-#### **1. Track a Delivery**
+#### **1. Authentication **
+
+```php
+use SendeoClientLaravel\Models\LoginAES;
+
+$loginUser = new LoginAES('TestUserName', 'TestPassWord');
+$response = Sendeo::login($loginUser);
+```
+
+#### **2. Track a Delivery**
 
 ```php
 use SendeoClientLaravel\Models\TrackDelivery;
@@ -75,7 +84,7 @@ $trackDelivery = new TrackDelivery('TRACK123456', 'REF123456');
 $response = Sendeo::trackDelivery('auth-token', $trackDelivery);
 ```
 
-#### **2. Cancel a Delivery**
+#### **3. Cancel a Delivery**
 
 ```php
 use SendeoClientLaravel\Models\CancelDelivery;
@@ -84,7 +93,7 @@ $cancelDelivery = new CancelDelivery('TRACK123456', 'REF123456');
 $response = Sendeo::cancelDelivery('auth-token', $cancelDelivery);
 ```
 
-#### **3. Set a Delivery**
+#### **4. Set a Delivery**
 
 ```php
 Coming Soon!
