@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace SendeoClientLaravel\Providers;
 
 use App\Services\SendeoClient;
 use Illuminate\Support\ServiceProvider;

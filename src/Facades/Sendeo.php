@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Facades;
+namespace SendeoClientLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services;
+namespace SendeoClientLaravel\Services;
 
 
 use SendeoClientLaravel\Models\TrackDelivery;
