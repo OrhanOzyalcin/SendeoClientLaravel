@@ -17,10 +17,10 @@ Configuration
 This package uses Laravel's Package Discovery, so no manual configuration is required. However, ensure the following is properly set up:
 
 Service Provider
-1. The SendeoServiceProvider is automatically registered.
+The SendeoServiceProvider is automatically registered.
 
 Facade
-2. The Sendeo alias is automatically added for easy usage.
+The Sendeo alias is automatically added for easy usage.
 
 
 Usage
