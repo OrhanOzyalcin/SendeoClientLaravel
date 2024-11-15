@@ -1,0 +1,33 @@
+{
+    "name": "orhanozyalcin/sendeo-client-laravel",
+    "description": "A Laravel-optimized PHP client library for Sendeo API integration.",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^11.31"
+    },
+    "autoload": {
+        "psr-4": {
+            "SendeoClientLaravel\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Orhan Özyalçın",
+            "email": "orhanozyalcin@icloud.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SendeoClientLaravel\\Providers\\SendeoServiceProvider"
+            ],
+            "aliases": {
+                "Sendeo": "SendeoClientLaravel\\Facades\\Sendeo"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
