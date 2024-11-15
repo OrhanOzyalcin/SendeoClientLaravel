@@ -3,7 +3,8 @@
     "description": "A Laravel-optimized PHP client library for Sendeo API integration.",
     "type": "library",
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "illuminate/support": "*"
     },
     "autoload": {
         "psr-4": {
