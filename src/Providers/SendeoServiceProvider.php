@@ -2,7 +2,7 @@
 
 namespace SendeoClientLaravel\Providers;
 
-use App\Services\SendeoClient;
+use SendeoClientLaravel\Services\SendeoClient;
 use Illuminate\Support\ServiceProvider;
 
 class SendeoServiceProvider extends ServiceProvider
