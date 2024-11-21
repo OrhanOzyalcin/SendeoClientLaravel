@@ -36,6 +36,11 @@ php artisan vendor:publish --tag=sendeo_config
 ### **Example .env Configuration**
 
 ```bash
+
+# Maybe Use For Test not Tested: 
+#SENDEO_API_ID="TEST"
+#SENDEO_API_PASSWORD="TesT.43e54"
+
 # Live
 SENDEO_API_ID=YourProductionApiID
 SENDEO_API_PASSWORD=YourProductionApiPassword
@@ -81,14 +86,6 @@ $cancelDelivery = new CancelDelivery('TRACK123456', 'REF123456');
 $response = $sendeoClient->cancelDelivery('auth-token', $cancelDelivery);
 
 dd($response);
-```
-
-### **3. Using the Debug Routes**
-
-```php
-// Usage: web.php or api.php file in Laravel
-// use SendeoClientLaravel\Models\SendeoTestRoutes;
-// SendeoTestRoutes::routes();
 ```
 
 ---
